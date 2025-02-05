@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Театр{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Главная</a></li>
+                <li><a href="{{ url_for('contacts') }}">Контакты</a></li>
+                <li><a href="{{ url_for('schedule') }}">Расписание</a></li>
+                <li><a href="{{ url_for('photos') }}">Фото</a></li>
+                <li><a href="{{ url_for('reviews') }}">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Театр. Все права защищены.</p>
+    </footer>
+</body>
+</html>
