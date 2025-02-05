@@ -1,6 +1,3 @@
-Вот пример красиво оформленного `README.md` для вашего проекта на GitHub:
-
-```markdown
 # 🚀 Flask URL Shortener & Telegram Bot Integration
 
 ![Flask](https://img.shields.io/badge/Flask-v2.2.2-blue) 
